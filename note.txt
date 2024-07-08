@@ -1,0 +1,8 @@
+note
+1. React project create 
+    npx create-react-app appName 
+2. npm i react-router-dom concurrently
+    command create karana package.json file
+    npm run both
+    "backend": "nodemon backend/index.js",
+    "both": "concurrently \"npm run start\" \"npm run backend\""
