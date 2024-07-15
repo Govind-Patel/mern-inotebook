@@ -6,8 +6,13 @@ function NoteItems(props) {
     <div className='col-md-3'>
         <div className="card my-3">
             <div className="card-body">
+              <div className='d-flex  align-items-center'>
                 <h5 className="card-title">{note.title}</h5>
-                <p className="card-text">{note.description} Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aut sunt cumque ipsa ratione dicta, error repellendus dolorum quisquam excepturi? Illo maiores veritatis explicabo ut adipisci deserunt sequi quo soluta dolore repellat! Possimus, ad laudantium!</p>
+                <i className="fa fa-trash mx-2" aria-hidden="true"></i>
+                <i className="fa fa-edit mx-2" aria-hidden="true"></i>
+              </div>
+                <p className="card-text">{note.description} </p>
+                
             </div>
         </div>
     </div>
