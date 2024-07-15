@@ -61,6 +61,8 @@ const NoteState = (props) =>{
 
       // Add a note 
       const addNote = (title,description, tag)=>{
+          // TODO: Api call 
+
         console.log("adding a new notes");
         const note =  {
           "_id": "6683b64cb202e40f63a63c68e3",
@@ -74,8 +76,11 @@ const NoteState = (props) =>{
         setNotes(notes.concat(note));
       }
       // delete a note 
-      const deleteNote = ()=>{
-
+      const deleteNote = (id)=>{
+          // TODO: Api call 
+          console.log("Deleting the note id " + id);
+          const newNotes = notes.filter((note => { return note._id!==id}))
+          setNotes(newNotes);
       }
       // Edit a note 
       const editNote = ()=>{
