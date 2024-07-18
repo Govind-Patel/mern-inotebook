@@ -7,3 +7,4 @@ note
     "backend": "nodemon backend/index.js",
     "both": "concurrently \"npm run start\" \"npm run backend\""
 3.rafc home, rafce about, rafc navbar
+4. npm install cors
