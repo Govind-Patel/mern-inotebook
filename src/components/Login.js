@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 const Login = () => {
     const [credentials, setCredentials] = useState({email:"email",password:"password"});
     const navigate = useNavigate();
+    
     const handleSubmit = async (e)=>{
         e.preventDefault();
         const response = await fetch(`http://localhost:5000/api/auth/login`, {
@@ -36,7 +37,7 @@ const Login = () => {
                 <label htmlFor="password" className="form-label">Password</label>
                 <input type="password" className="form-control" value={credentials.password} onChange={onChange} id="password" name='password' />
             </div>
-            <button type="submit" className="btn btn-primary" onSubmit={handleSubmit}>Submit</button>
+            <button type="submit" className="btn btn-primary">Submit</button>
         </form>
     </div>
   )
